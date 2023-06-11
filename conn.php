@@ -103,17 +103,17 @@
 	           {  
 	           		if ($count<10) {
 	           			
-	           			$ID=$row['id'];                            
-	                    $TITLE=$row['title'];
-	                    $CAT_NAME=$row['cat'];
-	                    $TAG2=$row['tag'];
+	           			$id=$row['id'];                            
+	                    $title=$row['title'];
+	                    $gender=$row['gender'];
+	                    $tag=$row['tag'];
                     
 	           		
 		           		$dis.= "<div class='card'>
 					        <div class='card-body'>
-					          <h4 class='card-title'><a href='./v.php?PP_ID=$ID'>$TITLE</a></h4>
-					          <p class='card-text'> $CAT_NAME </p>
-					          <p class='card-text'> $TAG2 </p>
+					          <h4 class='card-title'><a href='./v.php?PP_ID=$id'>$title</a></h4>
+					          <p class='card-text'> $gender </p>
+					          <p class='card-text'> $tag </p>
 					        </div>
 					      </div>    
 					      <br>   ";
