@@ -71,7 +71,7 @@ var s_id=0;
 
 
 function t() {
-  alert('data.sql');
+ // alert('data.sql');
 var SEARCH_VAL=$("#search_text").val();
 
 $.ajax({
@@ -82,7 +82,7 @@ $.ajax({
     success: function (data) {
     var dli=parseInt(data.last_id);
     s_id=dli;
-    alert(data.sql);
+   // alert(data.sql);
     $('#www').append(data.dis_i);
     if ('YES'!=data.view_btn) {
        $('#view_more_btn').hide(); 
