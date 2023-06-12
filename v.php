@@ -10,47 +10,56 @@ if (empty($_GET['PP_ID'])) {
 include './link_page.php';
 $data = new Databases; 
 
-$TITLE=''; 
-$SUB_NAME=''; 
-$NOTE=''; 
-$TAG2=''; 
-$DATE=''; 
-$TIME=''; 
-$NAME=''; 
+$title=''; 
+$des=''; 
+$tel1=''; 
+$tel2=''; 
+$address=''; 
+$email=''; 
+$name=''; 
+$gender=''; 
+$tag=''; 
 
 
 
 
 
 
-$sql="SELECT * FROM book WHERE ID=$ID";
+$sql="SELECT * FROM ad WHERE ID=$ID";
 $exam_data = $data->select($sql); 
 
 foreach($exam_data as $row)  
 {  
                          
-$TITLE=$row["TITLE"]; 
-$SUB_NAME=$row["SUB_NAME"]; 
-$NOTE=$row["NOTE"]; 
-$TAG2=$row["TAG2"]; 
-$DATE=$row["DATE"]; 
-$TIME=$row["TIME"]; 
-$NAME=$row["NAME"]; 
+$title=$row["title"]; 
+$des=$row["des"]; 
+$tel1=$row["tel1"]; 
+$tel2=$row["tel2"]; 
+$address=$row["address"]; 
+$email=$row["email"]; 
+$name=$row["name"]; 
+$gender=$row["gender"]; 
+$tag=$row["tag"]; 
+$time=$row["time"]; 
+$date=$row["date"]; 
 
 }  
 
-$TITLE=nl2br($TITLE);
-$SUB_NAME=nl2br($SUB_NAME);
-$NOTE=nl2br($NOTE);
-$TAG2=nl2br($TAG2);
-$NAME=nl2br($NAME);
-
-$sql="SELECT * FROM path WHERE EXAM_ID=$ID";
-$path_data = $data->select($sql); 
-
+$title=nl2br($title);
+$des=nl2br($des);
+$tel1=nl2br($tel1);
+$tel2=nl2br($tel2);
+$address=nl2br($address);
+$email=nl2br($email);
+$name=nl2br($name);
+$gender=nl2br($gender);
+$tag=nl2br($tag);
+$tatimeg=nl2br($time);
+$date=nl2br($date);
 
 
 header_page();
+
 ?>
 
 
@@ -85,28 +94,18 @@ header_page();
   </div>
   <div class="col-sm-8">
     <div class="container p-5 my-5 border">
-      <h2><?php echo $TITLE?></h2>
-      <h2>
-      <?php
-        $count=0;
-        foreach($path_data as $row)  
-        {  
-                                 
-          $URL=$row["URL"];
-          $count=$count+1; 
-        ?>
-         <?php echo $count?>.<a href="<?php echo $URL?>" target="_blank">Please Click to View  Note or Pastpaper or Book {<span style="font-size:20px"> <?php echo $TITLE?></span>}</a><br>
-
-        <?php
-        }  
-
-      ?>
-      </h2>
+      <h2><?php echo $title?></h2>
+      
       <br>
-      <h5><?php echo $SUB_NAME?></h5>
-      <h5><?php echo $NOTE ?></h5>
-      <h5><?php echo $TAG2?></h5>
-      <h5> Publisher - <?php echo $NAME?>  | <?php echo $DATE?></h5>
+      <h5><?php echo $gender?></h5>
+      <h5><?php echo $des ?></h5>
+      <h5> Name - <?php echo $name?> </h5>
+      <h5> Tel - <?php echo $tel1?> | <?php echo $tel2?> </h5>
+      <h5> email - <?php echo $email?> </h5>
+      <h5> Adderss - <?php echo $address?>  
+       <h6><?php echo $date?></h6>
+      <h5><?php echo $tag?></h5>
+      
     </div>
 
      <center> <a href="index.php" style="text-decoration: none;"><button id="view_more_btn" class="btn btn- btn-block" style="background-color:#badc58"> View All Book , Note ,Past Paper </button></a></center>
