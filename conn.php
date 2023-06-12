@@ -95,7 +95,7 @@
 				}
 
 			   $count=0;
-
+			   $all='';
 			   $query = $sql;  
 	           $result = mysqli_query($this->conn, $query); 
 	           $num_rows= mysqli_num_rows($result); 
@@ -107,13 +107,29 @@
 	                    $title=$row['title'];
 	                    $gender=$row['gender'];
 	                    $tag=$row['tag'];
-                    
+	                    $des=$row['des'];
+						$all='';
+					    $des2=substr_replace($des, "...<a href=''>Read more</a>", 20);
+						$str = "Hello world. It's a beautiful day.";
+						$arr=explode("#",$tag);
+
+						foreach($arr as $key => $val){
+							if ($key==0) {
+								
+							} else {
+								$all.="<code>#$val </code>";
+							}
+							
+							
+						}
+
 	           		
 		           		$dis.= "<div class='card'>
 					        <div class='card-body'>
 					          <h4 class='card-title'><a href='./v.php?PP_ID=$id'>$title</a></h4>
-					          <p class='card-text'> $gender </p>
-					          <p class='card-text'> $tag </p>
+					          <p class='card-text '> $gender </p>
+					          <p class='card-text des'>$des2  </p>
+					          <p class='card-text'> $all </p>
 					        </div>
 					      </div>    
 					      <br>   ";
