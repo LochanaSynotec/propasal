@@ -65,7 +65,7 @@ header_page();
 
     <div class="form-group">
       <label for="email">Tag (Key is searching )<sup style="color:red ">*</sup>:</label>
-      <textarea class="form-control" rows="6" name="TAG2" placeholder="2002  EnglishPastpaper  ABCCampus" required></textarea>
+      <textarea class="form-control" rows="6" name="tag" placeholder="2002  EnglishPastpaper  ABCCampus" required></textarea>
     </div><br>
   
       </div>
