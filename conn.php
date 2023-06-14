@@ -142,6 +142,7 @@
 	           }
 
 	          $sbtn=$num_rows-$count;
+			 
 	           
 			   if ($sbtn!=0) {
 			   $view_btn='YES';
@@ -152,7 +153,7 @@
 	           
 
 				$data["dis_i"] = $dis;
-				$data["last_id"] = $ID;
+				$data["last_id"] = $id;
 				$data["view_btn"] = $view_btn;
 				$data["SEARCH_VAL"] = $SEARCH_VAL;
 				$data["sql"] = $sql;

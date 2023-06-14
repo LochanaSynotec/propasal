@@ -80,9 +80,9 @@ $.ajax({
     data:{ID:s_id,SEARCH_VAL:SEARCH_VAL},
     dataType: "json",
     success: function (data) {
-    var dli=parseInt(data.last_id);
+    var dli=parseInt(data.last_id); 
     s_id=dli;
-   // alert(data.sql);
+    //alert(s_id);
     $('#www').append(data.dis_i);
     if ('YES'!=data.view_btn) {
        $('#view_more_btn').hide(); 
