@@ -104,6 +104,7 @@
 	           		if ($count<10) {
 	           			
 	           			$id=$row['id'];                            
+	                    $slug=$row['slug'];
 	                    $title=$row['title'];
 	                    $gender=$row['gender'];
 	                    $tag=$row['tag'];
@@ -126,7 +127,7 @@
 	           		
 		           		$dis.= "<div class='card'>
 					        <div class='card-body'>
-					          <h4 class='card-title'><a href='./v.php?PP_ID=$id'>$title</a></h4>
+					          <h4 class='card-title'><a href='./v.php?slug=$slug'>$title</a></h4>
 					          <p class='card-text '> $gender </p>
 					          <p class='card-text des'>$des2  </p>
 					          <p class='card-text'> $all </p>

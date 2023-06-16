@@ -1,9 +1,9 @@
 <?php
 
-if (empty($_GET['PP_ID'])) {
+if (empty($_GET['slug'])) {
   exit();
 } else {
- $ID=$_GET['PP_ID'];
+ $slug=$_GET['slug'];
 }
 
 
@@ -25,7 +25,7 @@ $tag='';
 
 
 
-$sql="SELECT * FROM ad WHERE ID=$ID";
+$sql="SELECT * FROM ad WHERE slug='$slug'";
 $exam_data = $data->select($sql); 
 
 foreach($exam_data as $row)  
