@@ -1,9 +1,9 @@
 <?php
-
-if (empty($_GET['slug'])) {
-  exit();
+echo'ss';
+if (empty($_GET['url'])) {
+//  exit();
 } else {
- $slug=$_GET['slug'];
+ echo $slug=$_GET['url'];
 }
 
 

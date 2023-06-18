@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteBase /propasal/
+
+# Remove .php extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [QSA,L]
+
+# Rewrite specific routes
+RewriteRule ^users/(.*)$ v.php?url=users&data=$1 [QSA,L]
+
+# Rewrite all other requests to index.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ v.php?url=$1 [QSA,L]
