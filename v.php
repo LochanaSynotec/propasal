@@ -1,7 +1,7 @@
 <?php
-
+echo'ss';
 if (empty($_GET['url'])) {
-  exit();
+//  exit();
 } else {
  echo $slug=$_GET['url'];
 }

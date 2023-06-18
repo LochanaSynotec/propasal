@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <?php header_page(); ?>
+   
 
     <div class="container">
         <h1>Welcome to BookFair.ml</h1>

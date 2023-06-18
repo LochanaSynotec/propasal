@@ -44,30 +44,7 @@ class Databases
 	function r($search_id, $SEARCH_VAL)
 	{
 
-function route($path, $gender = null, $slug = null)
-{
-    $basePath = '/propasal'; // Set your base path here
-
-    // Define your routes and corresponding URLs
-    $routes = [
-        '' => '/',
-        'search-note-or-past-paper' => '/search-note-or-past-paper',
-        'upload-note-or-past-paper' => '/upload-note-or-past-paper',
-        'request-book-and-past-paper' => '/request-book-and-past-paper',
-        'Female' => "/$gender/$slug", // Update the 'Female' route with dynamic values
-        // Add more routes as needed
-    ];
-
-    if (array_key_exists($path, $routes)) {
-        return $basePath . $routes[$path];
-    }
-
-    if ($gender !== null && $slug !== null && array_key_exists("$gender/$slug", $routes)) {
-        return $basePath . $routes["$gender/$slug"];
-    }
-
-    return '#'; // Return a fallback URL if the route doesn't exist
-}
+    include 'route.php';
 
 
 
@@ -138,6 +115,7 @@ function route($path, $gender = null, $slug = null)
 			if ($count < 10) {
 
 				$id = $row['id'];
+				$name = $row['name'];
 				$slug = $row['slug'];
 				$title = $row['title'];
 				$gender = $row['gender'];
@@ -160,11 +138,12 @@ function route($path, $gender = null, $slug = null)
 
 				//$page_path = route("$gender/$slug", $gender, $slug);
 				//$page_path = route("$gender/$slug", $gender, $slug);
-				$page_path =route($gender, $gender, $slug);
+				//$page_path =route($gender, $gender, $slug);
+				$page_path = route("female/$name",$slug);
 
 				$dis .= "<div class='card'>
 					        <div class='card-body'>
-					          <h4 class='card-title'><a href='$page_path'>$title | </a></h4>
+					          <h4 class='card-title'><a href='$page_path'>$title</a></h4>
 					          <p class='card-text '> $gender </p>
 					          <p class='card-text des'>$des2  </p>
 					          <p class='card-text'> $all </p>

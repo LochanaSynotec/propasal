@@ -34,13 +34,17 @@ function header_page()
         <div class="collapse navbar-collapse" id="mynavbar">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="<?php echo route('search-note-or-past-paper'); ?>">Search Note Or Past Paper</a>
+              <a class="nav-link " href="<?php echo route(''); ?>">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="upload-note-or-past-paper">Upload Note Or Past Paper</a>
+              <a class="nav-link " href="<?php echo  route('reg'); ?>">Post AD</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="<?php echo route('t'); ?>">rr</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="request-book-and-past-paper">Request Book & Past Paper</a>
+              <a class="nav-link " href="<?php echo route('t'); ?>">rr</a>
             </li>
           </ul>
         </div>
