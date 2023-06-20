@@ -5,6 +5,7 @@ ini_set('display_errors', 1);
 
 
 include 'conn.php';
+include 'com.php';
 include 'route.php';
 include 'fun.php';
 include 'header_page.php';

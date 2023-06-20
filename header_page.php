@@ -1,14 +1,14 @@
 <?php
 function header_page()
 {
-  
+  global $com;
   ?>
 
   <!DOCTYPE html>
   <html lang="en">
 
   <head>
-    <title>BookFair.ml</title>
+    <title><?PHP echo $com['name'];?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@ function header_page()
     <a href="album"></a>
     <nav class="navbar navbar-expand-sm navbar-dark bg" style="background-color:#badc58">
       <div class="container-fluid">
-        <a class="navbar-brand" href="<?php echo  route(''); ?>"> <i> 11BookFair.ml11 |</i> </a>
+        <a class="navbar-brand" href="<?php echo  route(''); ?>"> <i> <?PHP echo $com['name'];?> </i> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
