@@ -2,16 +2,14 @@
 
 include './link_page.php';
 $data = new Databases; 
-
-
-
 header_page();
+
 ?>
 
 
 <div class="container-fluid p-5 bg- text-black text-center" style="background-color:#badc58;">
-  <h1 style="color:white">BOOKFAIR.ML</h1>
-  <h5 style="color:black"> Online Library </h5> 
+  <h1 style="color:white"><?PHP echo $com['name'];?></h1>
+  <h5 style="color:black"> <?PHP echo $com['domain-name'];?> </h5> 
   <h5 style="color:white"> You can Search and Upload Book |  Exam Past Paper | Note | Projrect | Education Details </h5> 
 </div>
 <br>
