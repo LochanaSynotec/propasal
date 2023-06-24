@@ -1,10 +1,9 @@
 :root{
     --back-light-color:#202124;
     --back-color:#171717;
-    --bg-color: red;
+    --bg-color: rgb(255, 255, 255);
+    --white:rgb(255, 255, 255);
 }
-
-
 
 
 
@@ -15,7 +14,7 @@
 }
 
 .h1-txt{
-    color: black;
+    color: var(--white);
     font-weight: 400;
     font-family: DauphinPlain;
     font-size:  12vmin;

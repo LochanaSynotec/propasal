@@ -22,13 +22,13 @@ function header_page()
   </head>
 
 
-  <div class="container-fluid p-5 bg- text-black text-center" style="background-color:#badc58;">
+  <div class="container-fluid p-5 bg- text-black text-center">
   <h1  class='h1-txt'><?PHP echo $com['name'];?></h1>
   <h5 style="color:white"> You can Search and Upload Book |  Exam Past Paper | Note | Projrect | Education Details </h5> 
 </div>
 
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-sm  navbar-dark" style="background-color: var(--back-color);">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Logo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
