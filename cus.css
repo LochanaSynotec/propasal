@@ -128,3 +128,8 @@ border-style: solid;
 border-radius: 20px;
 margin-bottom: 10px;
   }
+
+  .footer-page{
+    background-color: var(--back-color);
+    color: #d63384 !important;
+  }
