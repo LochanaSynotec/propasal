@@ -16,55 +16,51 @@ function header_page()
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <link href="cus.css" rel="stylesheet">
-
-
     <script src="fun.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/sweetalert2@10'></script>
 
   </head>
 
-  <body>
-    <a href="album"></a>
-    <nav class="navbar navbar-expand-sm navbar-dark bg" style="background-color:#badc58">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="<?php echo  route(''); ?>"> <i> <?PHP echo $com['name'];?> </i> </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link " href="<?php echo route(''); ?>">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="<?php echo  route('reg'); ?>">Post AD</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link " href="<?php echo route('t'); ?>">rr</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="<?php echo route('t'); ?>">rr</a>
-            </li>
+
+  <div class="container-fluid p-5 bg- text-black text-center" style="background-color:#badc58;">
+  <h1  class='h1-txt'><?PHP echo $com['name'];?></h1>
+  <h5 style="color:white"> You can Search and Upload Book |  Exam Past Paper | Note | Projrect | Education Details </h5> 
+</div>
+
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>  
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Link</a></li>
+            <li><a class="dropdown-item" href="#">Another link</a></li>
+            <li><a class="dropdown-item" href="#">A third link</a></li>
           </ul>
-        </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
 
-      </div>
-      </div>
-    </nav>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176749610-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-176749610-1');
-    </script>
-
-
-
+<body>
+    
     <?php
 }
 

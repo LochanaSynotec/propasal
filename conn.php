@@ -122,31 +122,36 @@ class Databases
 				$tag = $row['tag'];
 				$des = $row['des'];
 				$all = '';
-				$des2 = substr_replace($des, "...<a href=''>Read more</a>", 20);
-				$str = "Hello world. It's a beautiful day.";
+				$page_path = route("female/$name",$slug);
+
+				if (str_split($des)>250) {
+					$des2 = substr_replace($des, "...<a href=''>Read more</a>", 250);
+				} else {
+					$des2 =$des ;
+				}
+				
+				
 				$arr = explode("#", $tag);
 
 				foreach ($arr as $key => $val) {
 					if ($key == 0) {
 
 					} else {
-						$all .= "<code>#$val </code>";
+						$all .= "<code><a href='$page_path'>#$val </a></code>";
 					}
 
 
 				}
 
-				//$page_path = route("$gender/$slug", $gender, $slug);
-				//$page_path = route("$gender/$slug", $gender, $slug);
-				//$page_path =route($gender, $gender, $slug);
-				$page_path = route("female/$name",$slug);
+				
+				
 
-				$dis .= "<div class='card'>
+				$dis .= "<div class='card card-color'>
 					        <div class='card-body'>
 					          <h4 class='card-title'><a href='$page_path'>$title</a></h4>
 					          <p class='card-text '> $gender </p>
 					          <p class='card-text des'>$des2  </p>
-					          <p class='card-text'> $all </p>
+					          <div> $all </div>
 					        </div>
 					      </div>    
 					      <br>   ";

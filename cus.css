@@ -1,3 +1,94 @@
+:root{
+    --back-light-color:#202124;
+    --back-color:#171717;
+    --bg-color: red;
+}
+
+
+
+
+
+
+
 .des{
     margin-top: -15px;
 }
+
+.h1-txt{
+    color: black;
+    font-weight: 400;
+    font-family: DauphinPlain;
+    font-size:  12vmin;
+    line-height: 90px;
+  
+}
+
+
+body{
+    background-color: var(--back-light-color);
+}
+
+.card-color{
+    background-color: var(--back-color);
+   
+}
+
+.card-color a{
+    color: white; 
+    text-decoration: none;
+}
+
+.card-color {
+    color: #bcc0c3; 
+}
+
+/* Styling the search input box */
+.search-input {
+    color: white !important;
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    border: 1px solid #303134;
+    border-radius: 20px;
+    background-color: #303134;
+    
+  }
+  
+  /* Styling the search input box on focus */
+  .search-input:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(66, 133, 244, 0.6);
+  }
+
+  .search-input:focus {
+    background-color: #303134;
+  }
+  .form-control::placeholder{
+    color: white;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  code{
+    font-size: .875em;
+    color: #d63384;
+    word-wrap: break-word;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 5px;
+    margin-right: 7px;
+    margin-top:311px;
+    text-align: center;
+    line-height: 3;
+  }
+  code a{
+    color: #d63384 !important; 
+    text-decoration: none;
+  }
+  

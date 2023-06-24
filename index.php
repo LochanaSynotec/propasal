@@ -6,12 +6,6 @@ header_page();
 
 ?>
 
-
-<div class="container-fluid p-5 bg- text-black text-center" style="background-color:#badc58;">
-  <h1 style="color:white"><?PHP echo $com['name'];?></h1>
-  <h5 style="color:black"> <?PHP echo $com['domain-name'];?> </h5> 
-  <h5 style="color:white"> You can Search and Upload Book |  Exam Past Paper | Note | Projrect | Education Details </h5> 
-</div>
 <br>
 <div class="container-fluid">
 
@@ -40,8 +34,8 @@ header_page();
   </div>
   <div class="col-sm-8">
     <div class="input-group mb-3">
-     <span class="input-group-text">Search</span>
-     <input type="text" class="form-control" id="search_text" onkeyup="search()">
+     
+     <input type="text" class="form-control search-input" id="search_text" onkeyup="search()"  placeholder="Search">
     </div>
 
    
