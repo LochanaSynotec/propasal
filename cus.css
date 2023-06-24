@@ -32,6 +32,8 @@ body{
    
 }
 
+
+
 .card-color a{
     color: white; 
     text-decoration: none;
@@ -62,7 +64,7 @@ body{
     box-shadow: 0 0 4px rgba(66, 133, 244, 0.6);
   }
 
-  .search-input:focus {
+  .search-input:focus  {
     background-color: #303134;
   }
   .form-control::placeholder{
@@ -91,3 +93,38 @@ body{
     text-decoration: none;
   }
   
+
+  .reg{
+    background-color: var(--back-color);
+    color: var(--white);
+   
+}
+
+
+  
+.reg .form-control {
+    background-color:var(--back-light-color);
+    outline: none; 
+    border: none;
+    color:  var(--white);
+  }
+  
+  
+  
+
+  .form-control:focus {
+    /* CSS styles for the input field in focus */
+    outline: none; /* Remove the default outline */
+    border-color: blue;
+    box-shadow: 0 0 5px blue;
+    background-color:var(--back-light-color);
+    color:  var(--white);
+
+  }
+
+  .cus-btn{
+    background-color: #d63384;
+border-style: solid;
+border-radius: 20px;
+margin-bottom: 10px;
+  }
