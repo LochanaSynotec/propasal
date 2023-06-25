@@ -1,9 +1,23 @@
 <?php
-echo'ss';
-if (empty($_GET['url'])) {
+
+$currentURL = "http";
+if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on'){
+    $currentURL .= "s";
+}
+$currentURL .= "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$parts = parse_url($currentURL);
+
+// Accessing individual components
+$scheme = $parts['scheme'];
+$host = $parts['host'];
+$path = $parts['path'];
+$arr_path=explode('/',$path);
+
+
+if (empty($arr_path[4])) {
 //  exit();
 } else {
- echo $slug=$_GET['url'];
+  $slug=$arr_path[4];
 }
 
 
