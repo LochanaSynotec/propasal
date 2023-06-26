@@ -721,4 +721,25 @@ function createSlug($str, $delimiter = '-'){
 } 
 
 
+function base_url(){
+  $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://';
+  $host = $_SERVER['HTTP_HOST'];
+  $baseURL_url = $protocol . $host;
+
+if ($host=='localhost') {
+
+$baseURL = $_SERVER['REQUEST_URI'];
+$basePath = parse_url($baseURL, PHP_URL_PATH);
+$basePath = trim($basePath, '/');
+$folders = explode('/', $basePath);
+$projectName = $folders[0];
+$baseURL= $baseURL_url.'/'.$projectName;
+
+} else {
+  $baseURL = $protocol . $host;
+}
+
+return $baseURL;
+}
+
 ?>

@@ -133,3 +133,16 @@ margin-bottom: 10px;
     background-color: var(--back-color);
     color: #d63384 !important;
   }
+
+
+  .view-page{
+    background-color: var(--back-color);
+    color: var(--white);
+   
+}
+
+.view-page{
+  background-color: var(--back-color);
+  color: var(--white);
+ 
+}
