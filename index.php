@@ -8,7 +8,6 @@ header_page();
 
 <br>
 <div class="container-fluid">
-
   <div class="row">
     <div class="col-sm-4">
       <a href="reg.php" style="text-decoration: none;">

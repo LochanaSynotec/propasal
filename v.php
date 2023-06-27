@@ -1,5 +1,13 @@
 <?php
 
+include './link_page.php';
+$data = new Databases; 
+
+
+
+
+
+
 $currentURL = "http";
 if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on'){
     $currentURL .= "s";
@@ -21,8 +29,7 @@ if (empty($arr_path[4])) {
 }
 
 
-include './link_page.php';
-$data = new Databases; 
+
 
 $title=''; 
 $des=''; 
@@ -35,7 +42,7 @@ $gender='';
 $tag=''; 
 
 
-
+$all='';
 
 
 
@@ -71,24 +78,29 @@ $tag=nl2br($tag);
 $tatimeg=nl2br($time);
 $date=nl2br($date);
 
+$arr = explode("#", $tag);
+
+				foreach ($arr as $key => $val) {
+					if ($key == 0) {
+
+					} else {
+						$all .= "<code><a href=''>#$val </a></code>";
+					}
+
+
+				}
+
 
 header_page();
 
 ?>
-
-
-<div class="container-fluid p-5 bg- text-black text-center" style="background-color:#badc58;">
-  <h1 style="color:white">Book Fair.ML</h1>
-  <h5 style="color:black"> Online Library </h5> 
-  <h5 style="color:white"> You can Search and Upload Book |  Exam Past Paper | Note | Projrect | Education Details </h5> 
-</div>
 <br>
 <div class="container-fluid">
 <div class="row">
   <div class="col-sm-4">
         <a href="reg.php" style="text-decoration: none;">
           <div class="d-grid">
-            <button type="button" class="btn btn- btn-block" style="background-color:#badc58;">Upload Book |Note | Past Paper  </button>
+            <button type="button" class="btn btn- btn-block cus-btn" >Upload Book |Note | Past Paper  </button>
           </div>
         </a>
   </div>
@@ -97,7 +109,7 @@ header_page();
   <div class="col-sm-4">
         <a href="all_request.php" style="text-decoration: none;">
           <div class="d-grid">
-            <button type="button" class="btn btn- btn-block" style="background-color:#badc58;">Request Book | Note & Past Paper</button>
+            <button type="button" class="btn btn- btn-block cus-btn" >Request Book | Note & Past Paper</button>
           </div>
         </a>
   </div>
@@ -106,23 +118,26 @@ header_page();
 <div class="row">
   <div class="col-sm-2">
   </div>
-  <div class="col-sm-8">
-    <div class="container p-5 my-5 border">
-      <h2><?php echo $title?></h2>
-      
+  <div class="col-sm-8 ">
+    <div class="container p-5 my-5  view-page">
+      <h2><?php echo $title?>  <?php echo $tel1?> </h2>
       <br>
-      <h5><?php echo $gender?></h5>
+      <hr>
       <h5><?php echo $des ?></h5>
-      <h5> Name - <?php echo $name?> </h5>
-      <h5> Tel - <?php echo $tel1?> | <?php echo $tel2?> </h5>
-      <h5> email - <?php echo $email?> </h5>
-      <h5> Adderss - <?php echo $address?>  
+      <br>
+      <hr>
+      <h5> Name  :  <?php echo $name?> </h5>
+      <h5> Gender : <?php echo $gender?> </h5>
+      <h5> Tel    :     <?php echo $tel1?> | <?php echo $tel2?> </h5>
+      <h5> email : <?php echo $email?> </h5>
+      <h5> Adderss : <?php echo $address?>  
        <h6><?php echo $date?></h6>
-      <h5><?php echo $tag?></h5>
+       <br>
+      <div><?php echo $all?></div>
       
     </div>
 
-     <center> <a href="index.php" style="text-decoration: none;"><button id="view_more_btn" class="btn btn- btn-block" style="background-color:#badc58"> View All Book , Note ,Past Paper </button></a></center>
+     <center> <a href="index.php" style="text-decoration: none;"><button id="view_more_btn" class="btn btn- btn-block cus-btn" > View All Book , Note ,Past Paper </button></a></center>
 
   </div>
   <div class="col-sm-2"> </div>

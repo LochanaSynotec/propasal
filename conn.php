@@ -47,17 +47,6 @@ class Databases
     include 'route.php';
 
 
-
-
-
-
-
-
-
-
-
-
-
 		$dis = '';
 		$ID = 0;
 		$s_id = $search_id;

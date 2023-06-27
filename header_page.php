@@ -1,7 +1,12 @@
 <?php
 function header_page()
 {
-  global $com;
+global $com;
+
+
+
+
+
   ?>
 
   <!DOCTYPE html>
@@ -15,8 +20,8 @@ function header_page()
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <link href="cus.css" rel="stylesheet">
-    <script src="fun.js"></script>
+    <link href="<?PHP echo base_url();?>/cus.css" rel="stylesheet">
+    <script src="<?PHP echo base_url();?>/fun.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/sweetalert2@10'></script>
 
   </head>
