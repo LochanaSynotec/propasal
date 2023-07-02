@@ -8,34 +8,6 @@ header_page();
 
 <br>
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4">
-      <a href="reg.php" style="text-decoration: none;">
-        <div class="d-grid">
-          <button type="button" class="btn btn- btn-block" style="background-color:#d63384;border-style: solid;
-border-radius: 20px;margin-bottom: 10px;">All ads</button>
-        </div>
-      </a>
-    </div>
-    <div class="col-sm-4">
-
-    <a href="all_request.php" style="text-decoration: none;">
-        <div class="d-grid">
-          <button type="button" class="btn btn- btn-block" style="background-color:#d63384;border-style: solid;
-border-radius: 20px;margin-bottom: 10px;">Brides Ads</button>
-        </div>
-      </a>
-
-    </div>
-    <div class="col-sm-4">
-      <a href="all_request.php" style="text-decoration: none;">
-        <div class="d-grid">
-          <button type="button" class="btn btn- btn-block" style="background-color:#d63384;border-style: solid;
-border-radius: 20px;">Groomsman Ads</button>
-        </div>
-      </a>
-    </div>
-  </div>
   <br>
   <div class="row">
     <div class="col-sm-2">
