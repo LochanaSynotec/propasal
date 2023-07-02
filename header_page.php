@@ -48,7 +48,10 @@ global $com;
           <a class="nav-link" href="<?PHP echo  route("reg") ?>">Post Ad</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="<?PHP echo  route("brides") ?>">Brides Ads</a>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="<?PHP echo  route("grooms") ?>">Groomsman Ads</a>
         </li>  
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
@@ -63,6 +66,38 @@ global $com;
   </div>
 </nav>
   
+<br>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4">
+      <a href="<?PHP echo  route("") ?>" style="text-decoration: none;">
+        <div class="d-grid">
+          <button type="button" class="btn btn- btn-block" style="background-color:#d63384;border-style: solid;
+border-radius: 20px;margin-bottom: 10px;">All ads</button>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-4">
+
+      <a href="<?PHP echo  route("brides") ?>" style="text-decoration: none;">
+        <div class="d-grid">
+          <button type="button" class="btn btn- btn-block" style="background-color:#d63384;border-style: solid;
+border-radius: 20px;margin-bottom: 10px;">Brides Ads</button>
+        </div>
+      </a>
+
+    </div>
+    <div class="col-sm-4">
+      <a href="<?PHP echo  route("grooms") ?>" style="text-decoration: none;">
+        <div class="d-grid">
+          <button type="button" class="btn btn- btn-block" style="background-color:#d63384;border-style: solid;
+border-radius: 20px;">Groomsman Ads</button>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
 
 <body>
     

@@ -8,34 +8,6 @@ header_page();
 
 <br>
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4">
-      <a href="reg.php" style="text-decoration: none;">
-        <div class="d-grid">
-          <button type="button" class="btn btn- btn-block" style="background-color:#d63384;border-style: solid;
-border-radius: 20px;margin-bottom: 10px;">All ads</button>
-        </div>
-      </a>
-    </div>
-    <div class="col-sm-4">
-
-    <a href="all_request.php" style="text-decoration: none;">
-        <div class="d-grid">
-          <button type="button" class="btn btn- btn-block" style="background-color:#d63384;border-style: solid;
-border-radius: 20px;margin-bottom: 10px;">Brides Ads</button>
-        </div>
-      </a>
-
-    </div>
-    <div class="col-sm-4">
-      <a href="all_request.php" style="text-decoration: none;">
-        <div class="d-grid">
-          <button type="button" class="btn btn- btn-block" style="background-color:#d63384;border-style: solid;
-border-radius: 20px;">Groomsman Ads</button>
-        </div>
-      </a>
-    </div>
-  </div>
   <br>
   <div class="row">
     <div class="col-sm-2">
@@ -80,7 +52,7 @@ footer_page();
     $.ajax({
       type: 'POST',
       url: 'search_dis.php',
-      data: { ID: s_id, SEARCH_VAL: SEARCH_VAL,CAT_TYPE:''},
+      data: { ID: s_id, SEARCH_VAL: SEARCH_VAL, CAT_TYPE: '' },
       dataType: "json",
       success: function (data) {
         var dli = parseInt(data.last_id);
@@ -105,7 +77,7 @@ footer_page();
     $.ajax({
       type: 'POST',
       url: 'search_dis.php',
-      data: { ID: 0, SEARCH_VAL: SEARCH_VAL,CAT_TYPE:''},
+      data: { ID: 0, SEARCH_VAL: SEARCH_VAL, CAT_TYPE: '' },
       dataType: "json",
       success: function (data) {
         //alert(data.SEARCH_VAL);

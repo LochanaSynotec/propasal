@@ -96,24 +96,7 @@ header_page();
 ?>
 <br>
 <div class="container-fluid">
-<div class="row">
-  <div class="col-sm-4">
-        <a href="reg.php" style="text-decoration: none;">
-          <div class="d-grid">
-            <button type="button" class="btn btn- btn-block cus-btn" >Upload Book |Note | Past Paper  </button>
-          </div>
-        </a>
-  </div>
-  <div class="col-sm-4">
-  </div>
-  <div class="col-sm-4">
-        <a href="all_request.php" style="text-decoration: none;">
-          <div class="d-grid">
-            <button type="button" class="btn btn- btn-block cus-btn" >Request Book | Note & Past Paper</button>
-          </div>
-        </a>
-  </div>
-</div>
+
 <br>
 <div class="row">
   <div class="col-sm-2">
