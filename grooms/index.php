@@ -1,6 +1,6 @@
 <?php
 
-include './link_page.php';
+include '../link_page.php';
 $data = new Databases;
 header_page();
 
@@ -79,8 +79,8 @@ footer_page();
 
     $.ajax({
       type: 'POST',
-      url: 'search_dis.php',
-      data: { ID: s_id, SEARCH_VAL: SEARCH_VAL,CAT_TYPE:''},
+      url: '../search_dis.php',
+      data: { ID: s_id, SEARCH_VAL: SEARCH_VAL,CAT_TYPE:'GROOMS' },
       dataType: "json",
       success: function (data) {
         var dli = parseInt(data.last_id);
@@ -105,7 +105,7 @@ footer_page();
     $.ajax({
       type: 'POST',
       url: 'search_dis.php',
-      data: { ID: 0, SEARCH_VAL: SEARCH_VAL,CAT_TYPE:''},
+      data: { ID: 0, SEARCH_VAL: SEARCH_VAL,CAT_TYPE:'GROOMS'  },
       dataType: "json",
       success: function (data) {
         //alert(data.SEARCH_VAL);
