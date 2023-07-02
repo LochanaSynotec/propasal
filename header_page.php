@@ -28,24 +28,24 @@ global $com;
 
 
   <div class="container-fluid p-5 bg- text-black text-center">
-  <h1  class='h1-txt'><?PHP echo $com['name'];?></h1>
+  <a  href="<?PHP echo  route(" ") ?>" > <h1  class='h1-txt'><?PHP echo $com['name'];?></h1></a>
   <h5 style="color:white"> You can Search and Upload Book |  Exam Past Paper | Note | Projrect | Education Details </h5> 
 </div>
 
 
   <nav class="navbar navbar-expand-sm  navbar-dark" style="background-color: var(--back-color);">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Logo</a>
+    <a class="navbar-brand" href="<?PHP echo  route(" ") ?>">Logo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="<?PHP echo  route(" ") ?>">All Ads</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="<?PHP echo  route("reg") ?>">Post Ad</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
