@@ -345,18 +345,18 @@ class Databases
 
 		if ($s_id == 0 && $SEARCH_VAL == '') {
 
-			$sql = "SELECT * FROM ad WHERE status='ACTIVE' AND gender='male' ORDER BY ID DESC";
+			$sql = "SELECT * FROM ad WHERE status='ACTIVE' AND gender='Female' ORDER BY ID DESC";
 
 
 		} elseif ($s_id == 0 && $SEARCH_VAL != '') {
 
-			$sql = "SELECT * FROM ad WHERE $like_val AND(status='ACTIVE' ) AND(gender='male')  ORDER BY $like_od_val DESC, ID DESC ";
+			$sql = "SELECT * FROM ad WHERE $like_val AND(status='ACTIVE' ) AND(gender='Female')  ORDER BY $like_od_val DESC, ID DESC ";
 
 		} elseif ($s_id != 0 && $SEARCH_VAL == '') {
-			$sql = "SELECT * FROM  ad WHERE ID<$s_id AND status='ACTIVE' AND(gender='male')  ORDER BY ID DESC ";
+			$sql = "SELECT * FROM  ad WHERE ID<$s_id AND status='ACTIVE' AND(gender='Female')  ORDER BY ID DESC ";
 
 		} elseif ($s_id != 0 && $SEARCH_VAL != '') {
-			$sql = "SELECT * FROM  ad WHERE ID<$s_id  AND  $like_od_val AND(gender='male')  ORDER BY $like_od_val DESC, ID DESC";
+			$sql = "SELECT * FROM  ad WHERE ID<$s_id  AND  $like_od_val AND(gender='Female')  ORDER BY $like_od_val DESC, ID DESC";
 
 		}
 
