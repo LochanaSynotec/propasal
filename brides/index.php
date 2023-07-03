@@ -37,10 +37,10 @@ header_page();
 footer_page();
 ?>
 </body>
-
 </html>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+<?PHP
+footerLink();
+?>
 <script type="text/javascript">
 
   var s_id = 0;
@@ -53,7 +53,7 @@ footer_page();
     $.ajax({
       type: 'POST',
       url: '../search_dis.php',
-      data: { ID: s_id, SEARCH_VAL: SEARCH_VAL,CAT_TYPE:'BRIDES' },
+      data: { ID: s_id, SEARCH_VAL: SEARCH_VAL,CAT_TYPE:'BRIDES'},
       dataType: "json",
       success: function (data) {
         var dli = parseInt(data.last_id);
