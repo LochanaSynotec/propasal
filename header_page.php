@@ -26,14 +26,13 @@ global $com;
   </head>
 
 
-  <div class="container-fluid p-5 bg- text-black text-center">
+  <div class="container-fluid p-5 bg- text-black text-center" >
   <a  href="<?PHP echo  route(" ") ?>" > <h1  class='h1-txt'><?PHP echo $com['name'];?></h1></a>
   <h5 style="color:white"> You can Search and Upload Book |  Exam Past Paper | Note | Projrect | Education Details </h5> 
 </div>
 
-
   <nav class="navbar navbar-expand-sm  navbar-dark" style="background-color: var(--back-color);">
-  <div class="container-fluid">
+  <div class="container-fluid" style="width: 50%;width: 50%;margin-left: 29%;margin-right: 29%;">
     <a class="navbar-brand" href="<?PHP echo  route(" ") ?>">Logo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -66,7 +65,7 @@ global $com;
 </nav>
   
 <br>
-<div class="container-fluid">
+<div class="container-fluid" >
 <div class="row">
     <div class="col-sm-4">
       <a class="isActive" href="<?PHP echo  route("") ?>" style="text-decoration: none;">
