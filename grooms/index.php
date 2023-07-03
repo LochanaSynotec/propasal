@@ -54,7 +54,7 @@ footerLink();
     $.ajax({
       type: 'POST',
       url: '../search_dis.php',
-      data: { ID: s_id, SEARCH_VAL: SEARCH_VAL,CAT_TYPE:'GROOMS' },
+      data: { ID: s_id, SEARCH_VAL: SEARCH_VAL,CAT_TYPE:'GROOMS'},
       dataType: "json",
       success: function (data) {
         var dli = parseInt(data.last_id);
@@ -79,7 +79,7 @@ footerLink();
     $.ajax({
       type: 'POST',
       url: 'search_dis.php',
-      data: { ID: 0, SEARCH_VAL: SEARCH_VAL,CAT_TYPE:'GROOMS'  },
+      data: { ID: 0, SEARCH_VAL: SEARCH_VAL,CAT_TYPE:'GROOMS'},
       dataType: "json",
       success: function (data) {
         //alert(data.SEARCH_VAL);
