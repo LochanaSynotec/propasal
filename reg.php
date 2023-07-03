@@ -87,3 +87,7 @@ footer_page();
 </body>
 
 </html>
+
+<?PHP
+footerLink();
+?>

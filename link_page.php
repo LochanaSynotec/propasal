@@ -10,6 +10,7 @@ include 'route.php';
 include 'fun.php';
 include 'header_page.php';
 include 'footer_page.php';
+include 'footer-link.php';
 
 // Rest of your code goes here
 

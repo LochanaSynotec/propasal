@@ -36,15 +36,13 @@ header_page();
 footer_page();
 ?>
 </body>
-
 </html>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<?PHP
+footerLink();
+?>
 
 <script type="text/javascript">
-
   var s_id = 0;
-
-
   function t() {
     // alert('data.sql');
     var SEARCH_VAL = $("#search_text").val();
@@ -65,7 +63,6 @@ footer_page();
 
       }
     });
-
   }
 
   t();

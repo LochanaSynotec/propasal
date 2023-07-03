@@ -21,7 +21,6 @@ global $com;
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <link href="<?PHP echo base_url();?>/cus.css" rel="stylesheet">
-    <script src="<?PHP echo base_url();?>/fun.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/sweetalert2@10'></script>
 
   </head>
@@ -40,18 +39,18 @@ global $com;
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav menu">
         <li class="nav-item">
-          <a class="nav-link" href="<?PHP echo  route(" ") ?>">All Ads</a>
+        <a class="nav-link isActive" href="<?PHP echo  route(" ") ?>" >All Ads</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?PHP echo  route("reg") ?>">Post Ad</a>
+         <a class="nav-link isActive"  href="<?PHP echo  route("reg") ?>" >Post Ad</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?PHP echo  route("brides") ?>">Brides Ads</a>
+          <a class="nav-link isActive"   href="<?PHP echo  route("brides") ?>" >Brides Ads</a>
         </li>  
         <li class="nav-item">
-          <a class="nav-link" href="<?PHP echo  route("grooms") ?>">Groomsman Ads</a>
+          <a class="nav-link isActive" href="<?PHP echo  route("grooms") ?>">Groomsman Ads</a>
         </li>  
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
@@ -70,7 +69,7 @@ global $com;
 <div class="container-fluid">
 <div class="row">
     <div class="col-sm-4">
-      <a href="<?PHP echo  route("") ?>" style="text-decoration: none;">
+      <a class="isActive" href="<?PHP echo  route("") ?>" style="text-decoration: none;">
         <div class="d-grid">
           <button type="button" class="btn btn- btn-block" style="background-color:#d63384;border-style: solid;
 border-radius: 20px;margin-bottom: 10px;">All ads</button>
@@ -79,7 +78,7 @@ border-radius: 20px;margin-bottom: 10px;">All ads</button>
     </div>
     <div class="col-sm-4">
 
-      <a href="<?PHP echo  route("brides") ?>" style="text-decoration: none;">
+      <a class="isActive" href="<?PHP echo  route("brides") ?>" style="text-decoration: none;">
         <div class="d-grid">
           <button type="button" class="btn btn- btn-block" style="background-color:#d63384;border-style: solid;
 border-radius: 20px;margin-bottom: 10px;">Brides Ads</button>
@@ -88,7 +87,7 @@ border-radius: 20px;margin-bottom: 10px;">Brides Ads</button>
 
     </div>
     <div class="col-sm-4">
-      <a href="<?PHP echo  route("grooms") ?>" style="text-decoration: none;">
+      <a class="isActive" href="<?PHP echo  route("grooms") ?>" style="text-decoration: none;">
         <div class="d-grid">
           <button type="button" class="btn btn- btn-block" style="background-color:#d63384;border-style: solid;
 border-radius: 20px;">Groomsman Ads</button>

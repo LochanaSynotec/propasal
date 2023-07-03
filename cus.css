@@ -150,3 +150,21 @@ margin-bottom: 10px;
 a {
       text-decoration: none;
 }
+
+.active2 {
+  color: #ff0000; /* Set the color you want for the active link */
+}
+
+.btn-color {
+  background-color: #202124 !important; 
+  border-style: solid;
+  border-color: #d63384;
+  color: #d63384;
+}
+
+.btn-color:hover {
+  background-color: #202124 !important; 
+  border-style: solid;
+  border-color: #d63384;
+  color: #d63384;
+}
