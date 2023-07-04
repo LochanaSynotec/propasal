@@ -168,3 +168,9 @@ a {
   border-color: #d63384;
   color: #d63384;
 }
+
+.round-btn{
+  background-color:#d63384;
+  border-style: solid;
+  border-radius: 20px;
+}

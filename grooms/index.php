@@ -21,7 +21,7 @@ header_page();
 
 
       <div id="www"></div>
-      <center><button id="view_more_btn" class="btn btn- btn-block" style="background-color:#badc58" onclick="t()"> View
+      <center><button id="view_more_btn" class="btn btn- btn-block round-btn"  onclick="t()"> View
           More </button></center>
 
     </div>
