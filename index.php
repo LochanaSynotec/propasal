@@ -10,7 +10,7 @@ header_page();
 <div class="container-fluid">
   <br>
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-2"> 
       <!--   col 2   !-->
     </div>
     <div class="col-sm-8">
@@ -21,7 +21,7 @@ header_page();
 
 
       <div id="www"></div>
-      <center><button id="view_more_btn" class="btn btn- btn-block" style="background-color:#badc58" onclick="t()"> View
+      <center><button id="view_more_btn" class="btn btn- btn-block round-btn"  onclick="t()"> View
           More </button></center>
 
     </div>
